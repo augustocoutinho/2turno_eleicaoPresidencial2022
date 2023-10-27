@@ -225,7 +225,7 @@ ggplot() +
         legend.position = 'none') +
   scale_fill_gradient(low = '#071e49', high = '#7c0406')
 
-
+## Votos brancos ou nulos
 ggplot() +
   geom_sf(data = dfMunMap %>% st_as_sf(), aes(fill = branco_nulo_percentage), colour = alpha(colour = '#d0d0d0', 0.01), linewidth = 0) + 
   theme_minimal() +
